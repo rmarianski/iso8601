@@ -8,4 +8,7 @@ $(P): $(OBJECTS)
 clean:
 	rm -f $(OBJECTS) $(P)
 
+install $(P):
+	cp $(P) $(HOME)/bin/
+
 .PHONY: clean
